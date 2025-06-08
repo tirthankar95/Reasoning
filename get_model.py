@@ -16,17 +16,17 @@ def get_model(repo_id, local_dir):
                               filename=f"{filename}"))
 
 if __name__ == '__main__':
-    config = {
-        "repo_id": "meta-llama/Llama-3.2-1B",
-        "local_dir": f"{os.getcwd()}/models/Llama-3.2-1B"
-    }
+    # config = {
+    #     "repo_id": "meta-llama/Llama-3.2-1B",
+    #     "local_dir": f"{os.getcwd()}/models/Llama-3.2-1B"
+    # }
     # config = {
     #     "repo_id": "meta-llama/Meta-Llama-3-8B",
     #     "local_dir": f"{os.getcwd()}/models/Meta-Llama-3-8B"
     # }
-    # config = {
-    #     "repo_id": "Qwen/Qwen2.5-7B-Instruct-GGUF",
-    #     "local_dir" : f"{os.path.expanduser('~')}/models/Qwen2.5-7B-Instruct-GGUF"
-    # }
+    config = {
+        "repo_id": "Qwen/Qwen2.5-3B-Instruct",
+        "local_dir" : f"{os.getcwd()}/models/Qwen2.5-3B-Instruct"
+    }
     get_model(repo_id = config['repo_id'], \
               local_dir = config['local_dir'])
